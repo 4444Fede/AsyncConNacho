@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link rel="stylesheet" href="users.css" />
+  </head>
+  <body>
+
+    <div id="loadingOverlay" class="overlay"><div class="loader"></div></div>
+
+    <h1>User Directory</h1>
+    <div
+      style="
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <label style="margin: 0" for="roleSelector">Select Role:</label>
+      <select id="roleSelector">
+        <option value="">All</option>
+      </select>
+    </div>
+
+    <div id="userList" class="user-list"></div>
+
+    <script src="api.js"></script>
+  </body>
+</html>
